@@ -17,7 +17,7 @@ public class FractionalKnapsack {
         {
             for(j = 0; j < n; j++)
             {
-                if(ratio[i] > ratio[j])                        /******   sorts the ratio array and sorts the temporary arrays of profits of the elements and weights of the elements based on the condition of profit/weight ratio for adding to knapsack   ******/
+                if(ratio[i] > ratio[j])                        /******   bubble sorts the ratio array and sorts the temporary arrays of profits of the elements and weights of the elements based on the condition of profit/weight ratio for adding to knapsack   ******/
                 {
                     temp3 = ratio[j];
                     ratio[j] = ratio[i];
@@ -68,6 +68,6 @@ public class FractionalKnapsack {
         for (int i = 0; i < n; i++)
             weights[i] = scanner.nextDouble();              //input the weights of the elements
         
-        getOptimalValue(n, capacity, values, weights);      
+        getOptimalValue(n, capacity, values, weights);       
     }
 } 
